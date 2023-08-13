@@ -150,7 +150,7 @@ public class SpelServices {
             return new EntityNotFoundException("Game not found");
         });
 
-        // Fetch SpelareObjekt based on PlayerId in SpelObjekt
+
         SpelareObjekt player = null;
         if (game.getPlayerOne() != null && game.getPlayerOne().getPlayerId().equals(playerId)) {
             player = game.getPlayerOne();
